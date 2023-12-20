@@ -38,9 +38,11 @@ ul, ol {
     top: 0;
     width: 100%;
   }
-  body{
-    background: linear-gradient(to right,lightgreen, #96EFFF, #5FBDFF);
-  }
+  body {
+    background: linear-gradient(to right, #FFD1E3, #A367B1);
+    margin: 0; /* Add this to remove default body margin */
+}
+
   
   /* Adding spacing between the header and the navigation bar */
   h2 {
@@ -78,64 +80,3 @@ ul, ol {
     font-weight: bold;
   }
 
-  .popup{
-    position:absolute;
-    top: -50%;
-    left: 50%;
-    opacity: 0;
-    transform: translate(-50%,-50%) scale(1.25);
-    width: 380px;
-    padding: 20px 30px;
-    background: #ffff;
-    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
-    border-radius: 10px;
-    transition: top 0ms ease-in-out 200ms,
-                opacity 200ms ease-in-out 0ms,
-                transform 200ms ease-in-out 0ms;
-}
-.popup.active {
-    top: 50%;
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-    transition: top 0ms ease-in-out 0ms,
-            opacity 200ms ease-in-out 0ms,
-            transform 200ms ease-in-out 0ms;
-    background-color: linear-gradient(to left,skyblue,blue);
-}
-
-.popup .close-btn{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 15px;
-    height: 15px;
-    background: #888;
-    color: #eee;
-    text-align: center;
-    line-height: 15px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-.popup .form h2{
-    text-align: center;
-    columns: #222;
-    margin: 10px 0px 20px;
-    font-size: 25px;
-}
-.popup .form .form-element{
-    margin: 15px 0px;
-}
-.popup .form .form-element label{
-    font-size: 14px;
-    color: #222;
-}
-.popup .form .form-element input[type="email"],
-.popup .form .form-element input[type="password"]{
-    margin-top: 5px;
-    display: block;
-    width: 100%;
-    padding: 10px;
-    outline: none;
-    border: 1px solid #aaa;
-    border-radius: 5px;
-} 

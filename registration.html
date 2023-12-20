@@ -5,14 +5,14 @@
     <link  rel="stylesheet" type="text/css" href="style.css"/> 
     <!-- rel - relation  href - hypertext reference -->
 </head>
-<body bgcolor="#B6C4B6">
+<body>
     <h2 align="center">Student Information System</h2>
     <nav>
         <ul>
         <!-- ul - unorder list -->
         <li><a href="index.html">Home</a></li>
         <li><a href="registration.html">Registration</a></li>
-        <li><a href="login.html">Login</a></li>
+        <li><a id="show-login" >Login</a></li>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="https://newerp.kluniversity.in/" target="_blank">ERP</a></li>
         </ul>
@@ -156,5 +156,34 @@
         </table>
     </form>
     </center>
+    <div class="popup">
+        <div class="close-btn">&times;</div>
+        <form method="get" action="studenthome.html">
+            <h2 align="center">Login</h2>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="email" name="emailid" placeholder="Enter Email Address" required/>
+            </div>
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password" name="passwrd" id="pwd" placeholder="Enter Password" required/>
+            </div>
+            <div align="center">
+                <button type="submit" class="button">Sign in</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="reset" class=button >Clear</button>&nbsp;&nbsp;&nbsp;
+            </div>
+            <div class="form-element" align="right">
+                <p>New User? <a href="registration.html">Click Here</a></p>
+            </div>
+        </form>
+    </div>
 </body>
+<script>
+    document.querySelector("#show-login").addEventListener("click",function(){
+        document.querySelector(".popup").classList.add("active");
+    });
+    document.querySelector(".popup .close-btn").addEventListener("click",function(){
+        document.querySelector(".popup").classList.remove("active");
+    });
+</script>    
 </html>
