@@ -77,8 +77,16 @@ ul, ol {
     display: inline-block;
     font-weight: bold;
   }
-
-  .popup{
+  .container {
+    max-width: 400px; /* Adjust the maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px 30px; /* Add some padding to create space between the content and the box */
+    border: 1px solid #ccc; /* Add a border around the box */
+    border-radius: 15px; /* Add border-radius for rounded corners */
+    background-color: #fff; /* Set a background color for the box */
+    box-shadow: 3px 3px 6px 6px rgba(0,0,0,0.15);
+}
+.popup{
     position:absolute;
     top: -50%;
     left: 50%;
@@ -87,7 +95,7 @@ ul, ol {
     width: 380px;
     padding: 20px 30px;
     background: #ffff;
-    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 3px 3px 6px 6px rgba(0,0,0,0.15);
     border-radius: 10px;
     transition: top 0ms ease-in-out 200ms,
                 opacity 200ms ease-in-out 0ms,
