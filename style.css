@@ -78,7 +78,7 @@ ul, ol {
     font-weight: bold;
   }
   .container {
-    max-width: 400px; /* Adjust the maximum width of the container */
+    max-width: 450px; /* Adjust the maximum width of the container */
     margin: 0 auto; /* Center the container horizontally */
     padding: 20px 30px; /* Add some padding to create space between the content and the box */
     border: 1px solid #ccc; /* Add a border around the box */
